@@ -35,6 +35,12 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/index.html",
+                  "with": "src/index-gh.html"
+                }
+              ],
               "budgets": [
                 {
                   "type": "initial",
@@ -61,10 +67,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "frnkb1-website:build:production"
+              "buildTarget": "fxbai-website:build:production"
             },
             "development": {
-              "buildTarget": "frnkb1-website:build:development"
+              "buildTarget": "fxbai-website:build:development"
             }
           },
           "defaultConfiguration": "development"
