@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #ffffff;
-  border-bottom: 1px solid #eee;
+  background: var(--banner);
+  border-bottom: 1px solid var(--border-accent);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -13,11 +13,10 @@
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
-    color: #333;
-    transition: color 0.2s;
+    color: var(--text);
 
     &:hover {
-      color: #007acc;
+      color: var(--link-hover);
     }
   }
 
@@ -27,18 +26,18 @@
 
     a {
       text-decoration: none;
-      color: #555;
+      color: var(--text);
       font-weight: 500;
       position: relative;
-      transition: color 0.2s;
+  
 
       &:hover {
-        color: #007acc;
+        color: var(--link-hover);
         cursor: pointer;
       }
 
       &.active {
-        color: #007acc;
+        color: var(--accent);
 
         &::after {
           content: '';

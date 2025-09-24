@@ -24,6 +24,8 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets",
+              "src/favicon.ico",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -35,12 +37,8 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/index.html",
-                  "with": "src/index-gh.html"
-                }
-              ],
+
+
               "budgets": [
                 {
                   "type": "initial",
@@ -58,7 +56,8 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "index": "src/index.html"
             }
           },
           "defaultConfiguration": "production"
@@ -87,8 +86,11 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
+            "assets": [ 
+              "src/assets",
+              "src/favicon.ico",
               {
+                
                 "glob": "**/*",
                 "input": "public"
               }

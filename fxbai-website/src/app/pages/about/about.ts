@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './about.html',
   styleUrl: './about.scss'
 })
@@ -11,18 +12,18 @@ export class About {
     'Angular',
     'TypeScript',
     'Java',
-    'Python',
-    'Flask',
-    'SQL',
+    'CSS/HTML',
+    'SpringBoot Framework',
     'Git/GitHub',
   ];
 
   experience = [
     {
       role: 'Software Developer (Co-op)',
-      company: 'ExampleCorp',
-      period: 'Jan – Apr 2025',
-      desc: 'Worked on enterprise Angular applications, improving UI and performance.',
+      company: 'CIBC',
+      period: 'May – Aug 2025',
+      desc: 'Developed enterprise Angular19 proof-of-concept application, to modernize the existing loan management system.' 
+        + ' Integrated RESTful API with SpringBoot backend services to Angular frontend for smooth, and fast data handling, to move on from stateful JSPs and Servlet apps. ',
     },
     {
       role: 'Student Developer',
