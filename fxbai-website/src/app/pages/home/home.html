@@ -1,1 +1,25 @@
-<p>home works!</p>
+<section class="hero">
+  <div class="intro">
+    <h1>Hi, I’m Franklin</h1>
+    <p>
+      I’m a software developer passionate about building lightweight, and efficient web applications.
+      something something something backend stuff, databases, java, angular, springboot.
+    </p>
+    <a class="cta" routerLink="/projects">View My Work →</a>
+  </div>
+</section>
+
+<section class="highlights">
+  <h2>Explore</h2>
+  <div class="grid">
+    <a
+      class="card"
+      *ngFor="let item of highlights"
+      [routerLink]="item.link"
+    >
+      <div class="icon">{{ item.icon }}</div>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.desc }}</p>
+    </a>
+  </div>
+</section>
