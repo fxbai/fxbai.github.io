@@ -1,5 +1,7 @@
 <nav class="navbar">
   <a routerLink="/" class="logo">Franklin Bai</a>
+  
+    
   <ul class="nav-links">
     <a routerLink="/">Home</a>
      <a routerLink="/projects">Projects</a>
@@ -9,5 +11,7 @@
      <a routerLink="/contact">Contact</a>
     
   </ul>
-  <button (click)="toggleDarkMode()">🌓</button>
+
+  <app-switch class="theme-switch"></app-switch>
+  
 </nav>

@@ -16,6 +16,7 @@
     color: var(--text);
 
     &:hover {
+      transition: 0.2s;
       color: var(--link-hover);
     }
   }
@@ -23,6 +24,7 @@
   .nav-links {
     display: flex;
     gap: 5rem;
+    list-style: none;
 
     a {
       text-decoration: none;
@@ -31,7 +33,8 @@
       position: relative;
   
 
-      &:hover {
+      &:hover { 
+        transition: 0.1s;
         color: var(--link-hover);
         cursor: pointer;
       }
@@ -50,6 +53,54 @@
           left: 0;
         }
       }
+    }
+  }
+
+   @media (max-width: 1024px) {
+    
+    .nav-links {
+      
+      gap: 3rem; // tighter spacing
+      a {
+        font-size: 0.95rem;
+      }
+    }
+    .theme-switch {
+      scale: 0.5;
+    }
+  }
+
+  // ✅ Small screens (mobile landscape)
+  @media (max-width: 768px) {
+    .nav-links {
+      gap: 1.5rem;
+      a {
+        font-size: 0.85rem;
+      }
+    }
+        .theme-switch {
+      scale: 0.3;
+    }
+  }
+
+  // ✅ Extra small screens (mobile portrait)
+  @media (max-width: 480px) {
+    flex-wrap: wrap; // allow wrapping if needed
+    justify-content: center;
+    padding: 0.5rem 1rem;
+
+    .logo {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .nav-links {
+      gap: 1rem;
+      flex-wrap: wrap; // links wrap onto multiple lines
+      justify-content: center;
+    }
+        .theme-switch {
+      scale: 0.3;
     }
   }
 }

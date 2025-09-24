@@ -26,6 +26,16 @@
       font-size: 1rem;
       color: var(--text-muted);
       line-height: 1.6;
+
+      a {
+        color: var(--link);
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -74,7 +84,7 @@
         }
 
         .company {
-          font-size: 0.9rem;
+          font-size: 1.05rem;
           color: var(--text-subtitle);
           margin-bottom: 0.5rem;
         }
