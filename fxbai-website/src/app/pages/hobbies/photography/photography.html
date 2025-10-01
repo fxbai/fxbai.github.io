@@ -1,0 +1,9 @@
+<div class="photo-grid">
+  <div class="photo-card" *ngFor="let photo of photos">
+    <img [src]="photo.src" [alt]="photo.title" (click)="openPhoto(photo.src)" />
+  </div>
+</div>
+
+<div class="lightbox" *ngIf="selectedPhoto" (click)="closePhoto()">
+  <img [src]="selectedPhoto" class="lightbox-img" (click)="closePhoto()" />
+</div>
