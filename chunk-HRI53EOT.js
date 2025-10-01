@@ -1,1 +1,0 @@
-import{La as s,Ma as n,Qa as c,va as o}from"./chunk-FKMBFGVK.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-projects"]],decls:2,vars:0,template:function(e,a){e&1&&(s(0,"p"),c(1,"projects works!"),n())},encapsulation:2})};export{p as Projects};
