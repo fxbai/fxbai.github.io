@@ -27,8 +27,13 @@
     .photography {
         h2 {
         font-size: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
 
+    }
+    ul {
+        list-style-type: none;
+        text-align: right;
+        color: var(--text-subtitle);
     }
     }
 

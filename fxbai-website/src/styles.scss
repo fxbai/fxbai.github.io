@@ -3,8 +3,12 @@
     --banner: #f0f0f0;
     --footer: #fafafa;
 
+  //--gradient-bg: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    --gradient-bg: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 
-  --bg: #ffffff;
+
+--bg: #ffffff;
+  
   --text: #000000;
   --card-bg: #f9f9f9;
   --link: #1a73e8;
@@ -21,6 +25,19 @@
 
 /* Dark Theme */
 .dark-mode {
+      --gradient-bg:
+    radial-gradient(at 10% 20%, hsl(210, 69%, 22%) 0px, transparent 50%),
+    radial-gradient(at 90% 80%, hsl(228, 40%, 14%) 0px, transparent 50%),
+    hsl(220, 40%, 6%);
+  // --gradient-bg: 
+  //   radial-gradient(circle at 3% 101%, hsla(0, 0%, 2%, 1) 13.8%, transparent 65%),
+  //   radial-gradient(circle at 98% 98%, hsla(0, 0%, 2%, 1) 15%, transparent 63.3%),
+  //   radial-gradient(circle at 46% 98%, hsla(240, 0%, 2%, 1) 20.6%, transparent 49.6%),
+  //   radial-gradient(circle at 3% 6%, hsla(18.26, 72%, 49%, 1) 15%, transparent 65%),
+  //   radial-gradient(circle at 97% 7%, hsla(240, 7%, 29%, 1) 15%, transparent 65%),
+  //   hsla(0, 0%, 2%, 1);
+   
+    //--gradient-bg: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     --footer: #0b0b18;
     --banner: #0b0b18;
   --bg: #000000;
@@ -36,13 +53,27 @@
 
   --text-subtitle: #a5a5a5;
     --text-muted: #dacccc;
+
+
+
+    --repeating-grid-bg: repeating-radial-gradient(
+    circle at center center,
+    rgb(27, 27, 27) 0px,
+    rgb(27, 27, 27) 36px,
+    rgb(84, 84, 84) 36px,
+    rgb(84, 84, 84) 64px,
+    rgb(141, 141, 141) 64px,
+    rgb(141, 141, 141) 87px
+  );
+  --repeating-grid-size: 54px 54px;
 }
 
 /* Global base */
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--bg);
+   min-height: 100vh; //fill screen height no choppy choppy
+  background: var(--gradient-bg);
   color: var(--text);
   font-family: system-ui, sans-serif;
   transition: background 0.5s, color 0.5s;

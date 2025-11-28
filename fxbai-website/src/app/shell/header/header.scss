@@ -1,3 +1,4 @@
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -5,26 +6,31 @@
   padding: 1rem 2rem;
   background: var(--banner);
   border-bottom: 1px solid var(--border-accent);
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 100;
 
-  .logo {
+
+    .logo {
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
     color: var(--text);
-
+    
     &:hover {
       transition: 0.2s;
       color: var(--link-hover);
     }
   }
-
   .nav-links {
+        margin: 0 auto;
     display: flex;
     gap: 5rem;
     list-style: none;
+      position: absolute;
+  left: 49%;
+  transform: translateX(-49%);
+
 
     a {
       text-decoration: none;
@@ -70,7 +76,7 @@
     }
   }
 
-  // ✅ Small screens (mobile landscape)
+  // Small screens (mobile landscape)
   @media (max-width: 768px) {
     .nav-links {
       gap: 1.5rem;
@@ -83,7 +89,7 @@
     }
   }
 
-  // ✅ Extra small screens (mobile portrait)
+  // Extra small screens (mobile portrait)
   @media (max-width: 480px) {
     flex-wrap: wrap; // allow wrapping if needed
     justify-content: center;

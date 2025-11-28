@@ -1,6 +1,6 @@
 <div class="photo-grid">
   <div class="photo-card" *ngFor="let photo of photos">
-    <img [src]="photo.thumbnail" [alt]="photo.title" (click)="openPhoto(photo.full)" />
+    <img [src]="photo.full" [alt]="photo.title" (click)="openPhoto(photo.full)" />
   </div>
 </div>
 
